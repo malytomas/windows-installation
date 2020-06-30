@@ -1,0 +1,53 @@
+
+[Dìlitelé]
+n=12345678; print"Rozklad èísla",n;p=0;k=0;e=1;c=1;j=n;m=1; cykl: print d=divisor j; e=e*(d-(p!=d));if(p==d,gotor4,0); c=c*m;m=1;k++; m++;p=d; j=j/d; if(j>=d, goto cykl, 0);print;print"Poèet dìlitelù:",c*m;print"Poèet prvoèíselných dìlitelù:",k;print"Eulerova funkce:",e
+[faktoriál (Stirling)]
+/* pøibližný vzorec pro výpoèet faktoriálu, vhodný pro velká n */
+n=1e9;
+(n/exp1)^n*sqrt(2*pi*n)*(1+1/12/n+1/288/n^2-(1/373+1/2762330)/n^3
+[Kubická rovnice]
+/* a*x^3 + b*x^2 + c*x + d = 0 */
+a=1;b=2;c=3;d=4;
+u=-b/3/a; v=c/a; t=u^3-(u*v+d/a)/2; s=t^2+(v/3-u^2)*(v/3-u^2)^2; if(s>=0, goto complex, 0); s=2*sqrt(u^2-v/3); t=acos(t*8/s^3)/3; print cos(t)*s+u; print cos(t+deg120)*s+u;
+return cos(t+deg240)*s+u;   
+complex: v=3#(t+sqrt s); t=3#(t-sqrt s);
+print v+t+u; if(s<>0 or v<>0, return u-(v+t)/2+(v-t)*sqrt-3/2, 0);
+[Kvadratická rovnice]
+/* a*x^2 + b*x + c = 0 */
+a=1; b=3; c=2;
+D=sqrt(b^2-4*a*c; print(-b-D)/2/a; (-b+D)/2/a
+[Prvoèísla]
+/* n=poèet; p=od kterého èísla */
+n=100; p=1;
+print p=prime p; n--; if(n>0, goto2, 0);
+[tìlesa\komolý jehlan]
+/* a1=strana dolní podstavy, a2=strana horní podstavy, v=výška */
+a1=1; a2=2; v=3;
+print"Objem:",v/3*(a1^2+a1*a2+a2^2; print"Povrch:",(a1^2+a2^2+2*(a1+a2)*hypot(v,(a1-a2)/2
+[tìlesa\komolý kužel]
+/* r1=polomìr dolní podstavy, r2=polomìr horní podstavy, v=výška */
+r1=1; r2=0; v=2;
+print"Objem:",pi*v/3*(r1^2+r1*r2+r2^2; print"Povrch:",pi*(r1^2+r2^2+(r1+r2)*hypot(v,(r1-r2
+[tìlesa\koule]
+r=5;
+print"Objem:",4/3*pi*r^3; print"Povrch:",4*pi*r^2
+[tìlesa\kvádr]
+a=1; b=2; c=3;
+print"Objem:",a*b*c; print"Povrch:",2*(a*b+b*c+a*c; print"Úhlopøíèka:",sqrt(a^2+b^2+c^2
+[trojúhelník\sss]
+/* jsou zadány všechny tøi strany */
+a=3; b=4; c=5;
+print"Obvod:",a+b+c; p=ans/2;S=sqrt(p*(p-a)*(p-b)*(p-c; if(real ans,gotor3,0);print"Neplatí trojúhelníková nerovnost !";return;
+print"Obsah:",S; print"Kružnice vepsaná:",S/p; print "Kružnice opsaná:",a*b*c/4/S;print; print"Výška a:",2*S/a; print"Výška b:",2*S/b; print"Výška c:",2*S/c; print"Tìžnice a:",sqrt(2*(b^2+c^2)-a^2)/2; print"Tìžnice b:",sqrt(2*(a^2+c^2)-b^2)/2; print"Tìžnice c:",sqrt(2*(b^2+a^2)-c^2)/2; print; print"alfa:",acos((b^2+c^2-a^2)/(2*b*c; print"beta:",acos((a^2+c^2-b^2)/(2*a*c; print"gamma:",acos((b^2+a^2-c^2)/(2*b*a;
+[trojúhelník\Ssu]
+/* jsou zadány dvì strany a úhel, který jimi není sevøený */
+alfa=deg90; a=5; b=4;
+print"Strana c:",c=b*cos alfa+sqrt(a^2-(b*sin alfa)^2;  print"Obvod:",o=a+b+c; print"Obsah:",S=b*c*sin alfa/2; print"Kružnice vepsaná:",2*S/o; print "Kružnice opsaná:",a/2/sin alfa;print; print"Výška a:",2*S/a; print"Výška b:",2*S/b; print"Výška c:",b*sin alfa; print"Tìžnice a:",sqrt(2*(b^2+c^2)-a^2)/2; print"Tìžnice b:",sqrt(2*(a^2+c^2)-b^2)/2; print"Tìžnice c:",sqrt(2*(b^2+a^2)-c^2)/2; print; print"beta:",acos((a^2+c^2-b^2)/(2*a*c; print"gamma:",acos((b^2+a^2-c^2)/(2*b*a
+[trojúhelník\sus]
+/* jsou zadány dvì strany a úhel jimi sevøený */
+a=3; b=4; gamma=deg90;
+print"Strana c:",c=sqrt(a^2+b^2-2*a*b*cos gamma; print"Obvod:",o=a+b+c; print"Obsah:",S=a*b*sin gamma/2; print"Kružnice vepsaná:",2*S/o; print "Kružnice opsaná:",c/2/sin gamma;print; print"Výška a:",2*S/a; print"Výška b:",2*S/b; print"Výška c:",2*S/c; print"Tìžnice a:",sqrt(2*(b^2+c^2)-a^2)/2; print"Tìžnice b:",sqrt(2*(a^2+c^2)-b^2)/2; print"Tìžnice c:",sqrt(2*(b^2+a^2)-c^2)/2; print; print"alfa:",acos((b^2+c^2-a^2)/(2*b*c; print"beta:",acos((a^2+c^2-b^2)/(2*a*c; 
+[trojúhelník\usu]
+/* je zadána strana a úhly k ní pøilehlé */
+a=3; beta=deg40; gamma=deg50;
+p=a/sin(beta+gamma; print"Strana b:",b=p*sin beta; print"Strana c:",c=p*sin gamma; print"Obvod:",o=a+b+c; v=a/(cot beta+cot gamma; print"Obsah:",S=a*v/2; print"Kružnice vepsaná:",2*S/o; print "Kružnice opsaná:",p/2;print; print"Výška a:",v; print"Výška b:",2*S/b; print"Výška c:",2*S/c; print"Tìžnice a:",sqrt(2*(b^2+c^2)-a^2)/2; print"Tìžnice b:",sqrt(2*(a^2+c^2)-b^2)/2; print"Tìžnice c:",sqrt(2*(b^2+a^2)-c^2)/2; print; print"alfa:",deg180-beta-gamma
